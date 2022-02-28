@@ -21,11 +21,9 @@ RUN `docker exec -it delica_orders_service /bin/sh`
 
 RUN `php artisan command:export-orders`
 
-### Run without
+### Run without Docker
 Copy `.env.example` to `.env`
 
 Run `composer install`
 
 RUN `php artisan command:export-orders`
-
-## Note : Make sure the ports 80
